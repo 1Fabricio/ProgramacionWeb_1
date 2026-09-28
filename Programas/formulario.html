@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Supermercado el Ahorro</title>
+    </head>
+    <body>
+    <main>
+        <h2>Formulario de Afilicacion del clientes</h2>
+        <form action="afiliados.php", method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+                <label>Ingrese su nombre</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre y apellido" minlength="10" maxlength="100">
+            </div>
+            <div>
+                <label>Ingrese su numero de identidad</label>
+                <input type="text" name="dni" id="dni" required placeholder="Ingrese su nombre y apellido" minlength="13" maxlength="13" pattern="[0-9]{4}-[0-9]{4}-[0-9]{5}">
+            </div>
+            <div>
+                <label>Ingrese su telefono</label>
+                <input type="tel" name="telefono" id="telefono" required placeholder="Ingrese su numero de telefono" minlength="11" maxlength="11" >
+            </div>
+            <div>
+                <label>Ingrese su fecha de nacimiento</label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required placeholder="Ingrese su numero de telefono" minlength="1945-01-10" maxlength="2008-01-01" >
+            </div>
+            <div>
+                <label>Ingrese su direccion</label>
+                <input type="text" name="direccion id="direccion" required placeholder="Ingrese su direccion" minlength="10" maxlength="100" >
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informacion de compra</legend>
+            <div>
+                <label>Seleccione:</label>
+                <select id="Sucursal" name="Sucursal">
+                    <option selected>Blv Morazan</option>
+                    <option>City Mall</option>
+                    <option>Mall Premier</option>
+                </select>
+            </div>
+        </fieldset>
+        </form>
+    </main>
+    </body>
+
+</html>
